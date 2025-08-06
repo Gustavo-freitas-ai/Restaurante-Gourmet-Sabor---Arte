@@ -1,92 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes - Sabor & Arte</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho - Shop Mart</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
-        defer></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-</head>
-
-<body>
-
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <h1 class="fs-5 mb-0"><a class="text-decoration-none fs-5 text-white me-3" href="./index.html">Shop
-                        Mart</a></h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+  <body>
+    <div class="bg-danger d-flex justify-content-center">
+      <header class="py-3 mb-4 container bg-danger">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a href="/" class="navbar-brand fs-5 mb-0 text-white fw-bold"
+              >ShopMart</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNavbar"
+              aria-controls="mainNavbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-between align-items-center"
+              id="mainNavbar"
+            >
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-3 link-secondary text-white"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-3 link-dark text-white"
+                    >Features</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-3 link-dark text-white"
+                    >Pricing</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-3 link-dark text-white"
+                    >FAQs</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-3 link-dark text-white"
+                    >About</a
+                  >
+                </li>
+              </ul>
+              <div class="d-flex">
+                <button
+                  type="button"
+                  class="btn btn-light text-danger fw-bolder"
+                >
+                  Reservas
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./produtos.html">Produtos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contato.html">Contatos</a>
-                        </li>
-                    </ul>
-                    <button class="btn btn-secondary"><a href="./carrinho.html"
-                            class="text-white text-decoration-none">Carrinho <span
-                                class="badge text-secondary bg-white">2</span></a></button>
-                </div>
+              </div>
             </div>
+          </div>
         </nav>
-    </header>
-
-    
-    
-    <div class="bg-dark d-flex justify-content-center">
-        <footer class="container row py-5 mt-5">
-            <div class="col-12 col-lg-3 mb-5">
-                <h3 class="text-white">Shop Mart</h3>
-                <p class="text-white">© 2021</p>
-            </div>
-
-            <div class="offset-lg-1 col-12 col-lg-3 mb-5 mt-">
-                <h4 class="text-white">Menu Alternativo</h4>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Produtos</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contato</a></li>
-                </ul>
-            </div>
-
-            <div class="col-12 col-lg-3 mb-5">
-                <h4 class="text-white">Redes Sociais</h4>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Instagram</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Facebook</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">X</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Linkedin</a></li>
-                </ul>
-            </div>
-
-            <div class="col-12 col-lg-2 mb-5">
-                <h4 class="text-white">Contato</h4>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">(21) 98654-8985</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">WhatsApp</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">suporte@shopmart.com.br</a>
-                    </li>
-                </ul>
-            </div>
-
-        </footer>
+      </header>
     </div>
 
-</body>
+    <div class="bg-danger d-flex justify-content-center">
+      <footer class="container row py-5 mt-5">
+        <div class="col-12 col-lg-3 mb-5">
+          <h3 class="text-white">Shop Mart</h3>
+          <p class="text-white">© 2021</p>
+        </div>
 
+        <div class="offset-lg-1 col-12 col-lg-3 mb-5 mt-">
+          <h4 class="text-white">Menu Alternativo</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Produtos</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-3 mb-5">
+          <h4 class="text-white">Redes Sociais</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Instagram</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Facebook</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">X</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-2 mb-5">
+          <h4 class="text-white">Contato</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">(21) 98654-8985</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">WhatsApp</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white"
+                >suporte@shopmart.com.br</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
