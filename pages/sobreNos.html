@@ -15,46 +15,45 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
     defer></script>
-    <link rel="stylesheet" href="/Restaurante-Gourmet-Sabor-e-Arte/style/style.css">
-  <link rel="stylesheet" href="/Restaurante-Gourmet-Sabor-e-Arte/style/sobrenos.css" />
-  <link rel="stylesheet" href="/Restaurante-Gourmet-Sabor-e-Arte/style/global.css">
+  <link rel="stylesheet" href="/style/sobrenos.css" />
+  <link rel="stylesheet" href="/style/global.css">
 </head>
 
 <body>
-<div class="bg-danger d-flex justify-content-center">
-    <header class="py-3 mb-4 container bg-danger">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a href="/" class="navbar-brand fs-5 mb-0 text-white fw-bold">ShopMart</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-between align-items-center" id="mainNavbar">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a href="#" class="nav-link px-3 link-secondary text-white">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-3 link-dark text-white">Cardapio</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-3 link-dark text-white">Reservas</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-3 link-dark text-white">Sobre Nos</a>
-              </li>
-            </ul>
-            <div class="d-flex">
-              <button type="button" class="btn btn-light text-danger fw-bolder">
-                Reservas
-              </button>
-            </div>
+  <header class="py-3 container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+
+        <!-- Logo à esquerda -->
+        <a href="/" class="navbar-brand fs-5 mb-0"><img src="/assets/image/logo.png" alt="" style="width: 125px;"></a>
+
+        <!-- Botão hamburguer para mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Conteúdo colapsável -->
+        <div class="collapse navbar-collapse justify-content-between align-items-center" id="mainNavbar">
+
+          <!-- Menu centralizado -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+            <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Cardapio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Reservas</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Sobre Nos</a></li>
+          </ul>
+
+          <!-- Botões à direita -->
+          <div class="d-flex ">
+            <!-- <button type="button" class="btn btn-outline-primary me-2">Login</button> -->
+            <button type="button" class="btn btn-close-dark bg-white">Reservas</button>
           </div>
+
         </div>
-      </nav>
-    </header>
-  </div>
+      </div>
+    </nav>
+  </header>
   
   <div class="bg-danger d-flex justify-content-center">
     <footer class="container row py-5 mt-5">
