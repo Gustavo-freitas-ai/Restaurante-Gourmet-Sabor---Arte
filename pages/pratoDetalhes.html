@@ -37,17 +37,17 @@
         <div class="collapse navbar-collapse justify-content-between align-items-center" id="mainNavbar">
 
           <!-- Menu centralizado -->
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
-            <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Cardapio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Reservas</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Sobre Nos</a></li>
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+            <li class="nav-item"><a href="/index.html" class="nav-link px-3 text-white fs-5">Home</a></li>
+            <li class="nav-item"><a href="/pages/cardapio.html" class="nav-link px-3 text-white fs-5">Cardapio</a></li>
+            <li class="nav-item"><a href="/pages/sobreNos.html" class="nav-link px-3 text-white fs-5">Sobre Nos</a></li>
           </ul>
 
           <!-- Botões à direita -->
           <div class="d-flex ">
             <!-- <button type="button" class="btn btn-outline-primary me-2">Login</button> -->
-            <button type="button" class="btn btn-close-dark bg-white">Reservas</button>
+            <button type="button" class="btn btn-close-dark bg-white"><a href="/pages/reserva.html"
+                class="text-decoration-none text-danger fs-5">Reservas</a></button>
           </div>
 
         </div>
@@ -57,17 +57,48 @@
 
 
 
-<main>
+  <main class="container p-5">
+    <div class="row ">
+      <div class="col-lg-6">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/assets/image/cardapio.avif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/image/home.avif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/image/photo-1602253057119-44d745d9b860.avif" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <p class="fs-5">
+          Spaghetti alla Primavera
+          Delicado espaguete al dente envolto em um leve molho de azeite extra virgem, com toques sutis de alho e tomate
+          confit. Acompanha mini mussarelas de búfala, favas verdes frescas e folhas de rúcula selvagem, finalizado com
+          pimenta-do-reino moída na hora. Uma combinação refinada de sabores frescos e texturas marcantes.
+        </p>
+        <p></p>
+      </div>
+    </div>
+  </main>
 
 
 
-
-
-</main>
-
-
-
-  <div class="bg-danger d-flex justify-content-center">
+  <div class="d-flex justify-content-center" style="background-color: #a00f2d;">
     <footer class="container row py-5 mt-5">
       <div class="col-12 col-lg-3 mb-5">
         <h3 class="text-white">Shop Mart</h3>
