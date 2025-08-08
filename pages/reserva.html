@@ -46,13 +46,86 @@
           <!-- Botões à direita -->
           <div class="d-flex ">
             <!-- <button type="button" class="btn btn-outline-primary me-2">Login</button> -->
-            <button type="button" class="btn btn-close-dark bg-white"><a href="/pages/reserva.html" class="text-decoration-none text-danger fs-5">Reservas</a></button>
+            <button type="button" class="btn btn-close-dark bg-white"><a href="/pages/reserva.html"
+                class="text-decoration-none text-danger fs-5">Reservas</a></button>
           </div>
 
         </div>
       </div>
     </nav>
   </header>
+
+  <main class="container my-5 p-5 flex-fill">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8 ">
+        <h2 class="mb-4 text-center h1 fw-bold ">Faça sua Reserva</h2>
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="firstName" required placeholder="Coloque seu nome">
+            <div class="invalid-feedback">Informe seu nome</div>
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Sobrenome</label>
+            <input type="text" class="form-control" id="lastName" required placeholder="Coloque seu sobrenome">
+            <div class="invalid-feedback">Informe seu sobrenome</div>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" required placeholder="Coloque seu e-mail">
+            <div class="invalid-feedback">Informe um e-mail válido</div>
+          </div>
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="phone" required placeholder="Coloque seu telefone">
+            <div class="invalid-feedback">Informe seu telefone</div>
+          </div>
+          <div class="col-md-6">
+            <label for="date" class="form-label">Data</label>
+            <input type="date" class="form-control" id="date" required>
+            <div class="invalid-feedback">Escolha a data</div>
+          </div>
+          <div class="col-md-6">
+            <label for="time" class="form-label">Horário</label>
+            <input type="time" class="form-control" id="time" required>
+            <div class="invalid-feedback">Escolha o horário</div>
+          </div>
+          <div class="col-md-12">
+            <label for="guests" class="form-label">Número de Pessoas</label>
+            <select id="guests" class="form-select" required>
+              <option selected disabled value="">Escolha...</option>
+              <option value="1">1 Pessoa</option>
+              <option value="2">2 Pessoas</option>
+              <option value="3">3 Pessoas</option>
+              <option value="4">4 Pessoas</option>
+              <option value="5+">5 ou mais</option>
+            </select>
+            <div class="invalid-feedback">Selecione o número de pessoas</div>
+          </div>
+          <div class="col-12 text-center mt-4">
+            <button class="btn btn-danger px-5 py-2" type="submit">Reservar Agora</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Validação Bootstrap
+    (() => {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
 
   <div class="d-flex justify-content-center" style="background-color: #a00f2d;">
     <footer class="container row py-5 mt-5">
