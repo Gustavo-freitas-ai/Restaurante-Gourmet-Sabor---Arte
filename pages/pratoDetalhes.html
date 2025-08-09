@@ -17,10 +17,30 @@
     defer></script>
   <link rel="stylesheet" href="/Restaurante-Gourmet-Sabor-e-Arte/style/pratoDetalhes.css">
   <link rel="stylesheet" href="/style/global.css">
+<style>
+  /* Cor padrão das abas */
+.nav-tabs .nav-link {
+  background-color: #a00f2d;
+  color: white;
+  border: none;
+}
 
+/* Cor quando estiver ativa */
+.nav-tabs .nav-link.active {
+  background-color: rgb(87, 8, 8); /* Cor diferente para o selecionado */
+  color: white;
+}
+
+/* Cor ao passar o mouse */
+.nav-tabs .nav-link:hover {
+  background-color: rgb(87, 8, 8);
+  color: white;
+}
+</style>
 </head>
 
-<body style="background-image: url('https://bing.com/th/id/BCO.6c343823-4b78-4a39-be32-9fdc29eaeacd.png'); background-repeat: no-repeat; background-size: cover;"> 
+<body
+  style="background-image: url('https://bing.com/th/id/BCO.6c343823-4b78-4a39-be32-9fdc29eaeacd.png'); background-repeat: no-repeat; background-size: cover;">
   <header class="py-3 container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -38,7 +58,7 @@
         <div class="collapse navbar-collapse justify-content-between align-items-center" id="mainNavbar">
 
           <!-- Menu centralizado -->
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5 ">
             <li class="nav-item"><a href="/index.html" class="nav-link px-3 text-white fs-5">Home</a></li>
             <li class="nav-item"><a href="/pages/cardapio.html" class="nav-link px-3 text-white fs-5">Cardapio</a></li>
             <li class="nav-item"><a href="/pages/sobreNos.html" class="nav-link px-3 text-white fs-5">Sobre Nos</a></li>
@@ -55,8 +75,6 @@
       </div>
     </nav>
   </header>
-
-
 
   <main class="container p-5 ">
     <div class="row ">
@@ -86,129 +104,128 @@
         </div>
       </div>
       <div class="col-lg-6 d-flex justify-content-center flex-column gap-2">
-        <h2 class="d-flex h1 mb-3 text-danger fw-bold text-center justify-content-center mt-4">
+        <h2 class="d-flex h1 mb-3 fw-bold text-center justify-content-center mt-4"
+          style="color: #a00f2d; font-size: 50px;">
           Spaghetti alla Primavera
         </h2>
         <div class="text-center">
-          <p><span class="text-warning fs-3"><i class="bi bi-star-fill"></i></span>
-            <span class="text-warning fs-3"><i class="bi bi-star-fill"></i></span>
-            <span class="text-warning fs-3"><i class="bi bi-star-fill"></i></span>
-            <span class="text-warning fs-3"><i class="bi bi-star-fill"></i></span>
-            <span class="text-warning fs-3"><i class="bi bi-star-half"></i></i></span>
+          <p><span class="text-warning fs-1"><i class="bi bi-star-fill"></i></span>
+            <span class="text-warning fs-1"><i class="bi bi-star-fill"></i></span>
+            <span class="text-warning fs-1"><i class="bi bi-star-fill"></i></span>
+            <span class="text-warning fs-1"><i class="bi bi-star-fill"></i></span>
+            <span class="text-warning fs-1"><i class="bi bi-star-half"></i></i></span>
             <span class="text-black fs-3 text-white">(87 avaliações)</span>
           </p>
         </div>
         <div>
-          <p class="text-success fw-bold fs-1 text-center"
-            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">R$94,59</p>
+          <p class="fw-bold text-center"
+            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 55px; color: rgb(138, 219, 17);">R$94,59</p>
         </div>
-        <p class="fs-5">
-
-        </p>
       </div>
     </div>
-    </div>
 
-    <ul class="nav nav-tabs mt-5 d-flex gap-5 justify-content-center" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active text-danger fs-4" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-          type="button" role="tab" aria-controls="home" aria-selected="true">Descrição</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link text-danger fs-4" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-          type="button" role="tab" aria-controls="profile" aria-selected="false">Detalhes</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link text-danger fs-4" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-          type="button" role="tab" aria-controls="contact" aria-selected="false">Avaliações</button>
-      </li>
-    </ul>
-    <div class="tab-content col-9 offset-2" id="myTabContent">
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        <p class="fs-4 p-5 rounded-3 text-white"
-          style=" background-color : #a00f2d; margin-top: 40px; letter-spacing: 1px;"> Spaghetti alla Primavera
+    <div>
+      <ul class="nav nav-tabs d-flex justify-content-center fs-3 gap-5 mt-5" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-white active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+            type="button" role="tab" aria-controls="home" aria-selected="true">Descrição</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-white" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+            type="button" role="tab" aria-controls="profile" aria-selected="false">Detalhes</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-white" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+            type="button" role="tab" aria-controls="contact" aria-selected="false">Avaliações</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active mt-5 p-5 fs-3 text-white rounded-3" id="home" role="tabpanel"
+          aria-labelledby="home-tab" style="background-color: #a00f2d; ">Spaghetti alla
+          Primavera
           Delicado espaguete al dente envolto em um leve molho de azeite extra virgem, com toques sutis de alho e
           tomate
           confit. Acompanha mini mussarelas de búfala, favas verdes frescas e folhas de rúcula selvagem, finalizado
           com
           pimenta-do-reino moída na hora. Uma combinação refinada de sabores frescos e texturas marcantes.
-
-        </p>
-      </div>
-      <div class="tab-pane fade text-white p-5 mt-5 fs-4" id="profile" role="tabpanel" aria-labelledby="profile-tab"
-        style="background-color: #a00f2d;">
-        <ul>
-          <li>Espaguete al dente envolto em molho leve de azeite extra virgem</li>
-          <li>Toques sutis de alho e tomate confit</li>
-          <li>Acompanhado de:
-            <ul>
-              <li>Mini mussarelas de búfala</li>
-              <li>Favas verdes frescas</li>
-              <li>Folhas de rúcula selvagem</li>
-            </ul>
-          </li>
-          <li>Finalizado com pimenta-do-reino moída na hora</li>
-        </ul>
-      </div>
-      <div class="tab-pane fade gap-3 d-flex flex-column mt-3" id="contact" role="tabpanel"
-        aria-labelledby="contact-tab" style="margin-bottom: 20px;">
-        <p>
-        <div class="fs-4 mb-5 text-center text-white rounded-3" style="background-color: #a00f2d;">
-          Classificação Geral: <p><span class="text-warning"><i class="bi bi-star-fill"></i></span>
-            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
-            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
-            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
-            <span class="text-warning"><i class="bi bi-star-half"></i></i></span>
-            <span class="text-black">(87 avaliações)</span>
-          </p>
         </div>
-
-        <div class="shadow mb-4 rounded-3 fs-6 p-3 text-white" style="background-color: #a00f2d;">
-          <div class="fw-bold fs-5">
-            ⭐️⭐️⭐️⭐️⭐️ — Juliana M. (via Google Reviews)
-          </div> <br> <br>
-          “Simplesmente maravilhoso! O Spaghetti alla Primavera estava leve, bem temperado e os legumes crocantes deram
-          um
-          toque especial. Dá pra sentir que os ingredientes são frescos. Voltaria só por esse prato!” <br> <br>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <ul class="text-white fs-3 mt-5 p-5" style="background-color: #a00f2d;">
+            <li>Espaguete al dente envolto em molho leve de azeite extra virgem</li>
+            <li>Toques sutis de alho e tomate confit</li>
+            <li>Acompanhado de:
+              <ul>
+                <li>Mini mussarelas de búfala</li>
+                <li>Favas verdes frescas</li>
+                <li>Folhas de rúcula selvagem</li>
+              </ul>
+            </li>
+            <li>Finalizado com pimenta-do-reino moída na hora</li>
+          </ul>
         </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
-        <div class="shadow mb-4 rounded-3 fs-6 p-3 text-white" style="background-color: #a00f2d;">
-          <div class="fw-bold fs-5">
-            ⭐️⭐️⭐️⭐️⭐️ — Carlos T. (via iFood)
-          </div> <br>
-          “Muito bom, mas achei o molho um pouco suave demais. Poderia ter mais alho ou ervas. No geral, é uma ótima
-          opção
-          pra quem quer algo saudável e saboroso.” <br> <br>
+          <div class="fs-4 mb-5 mt-5 col-lg-4 offset-4 p-3 text-center text-white rounded-3"
+            style="background-color: #a00f2d;">
+            Classificação Geral: <p><span class="text-warning fs-1"><i class="bi bi-star-fill"></i></span>
+              <span class="text-warning fs-1"><i class="bi bi-star-fill"></i></span>
+              <span class="text-warning fs-1"><i class="bi bi-star-fill"></i></span>
+              <span class="text-warning fs-1"><i class="bi bi-star-fill"></i></span>
+              <span class="text-warning fs-1"><i class="bi bi-star-half"></i></i></span>
+              <span class="text-black"> <br> (87 avaliações)</span>
+            </p>
+          </div>
+
+          <div class="shadow mb-5 rounded-3 fs-6 p-3 text-white" style="background-color: #a00f2d;">
+            <div class="fw-bold fs-5">
+              ⭐️⭐️⭐️⭐️⭐️ — Juliana M. (via Google Reviews)
+            </div> <br> jj
+            “Simplesmente maravilhoso! O Spaghetti alla Primavera estava leve, bem temperado e os legumes crocantes
+            deram
+            um
+            toque especial. Dá pra sentir que os ingredientes são frescos. Voltaria só por esse prato!” <br> <br>
+          </div>
+
+          <div class="shadow mb-5 rounded-3 fs-6 p-3 text-white" style="background-color: #a00f2d;">
+            <div class="fw-bold fs-5">
+              ⭐️⭐️⭐️⭐️⭐️ — Carlos T. (via iFood)
+            </div> <br>
+            “Muito bom, mas achei o molho um pouco suave demais. Poderia ter mais alho ou ervas. No geral, é uma ótima
+            opção
+            pra quem quer algo saudável e saboroso.” <br> <br>
+          </div>
+
+          <div class="shadow mb-5 rounded-3 fs-6 p-3 text-white" style="background-color: #a00f2d;">
+            <div class="fw-bold fs-5">
+              ⭐️⭐️⭐️⭐️ — Renata F. (via TripAdvisor)
+            </div> <br>
+            “Bonito no prato, mas faltou personalidade no sabor. Os vegetais estavam bem cozidos, mas o espaguete veio
+            um
+            pouco mole. Pelo preço, esperava mais.” <br> <br>
+          </div>
+
+          <div class="shadow mb-5 rounded-3 fs-6 p-3 text-white" style="background-color: #a00f2d;">
+            <div class="fw-bold fs-5">
+              ⭐️⭐️⭐️⭐️⭐️ — Eduardo S. (via Instagram)
+            </div> <br>
+            “Esse prato é poesia! 🌱🍝 A combinação de abobrinha, tomate cereja e manjericão com o espaguete al dente
+            ficou
+            perfeita. Ideal pra quem quer comer bem sem sair empanturrado.” <br> <br>
+          </div>
+
+          <div class="shadow rounded-3 fs-6 p-3 text-white" style="background-color: #a00f2d; color: white  ;">
+            <div class="fw-bold fs-5">
+              ⭐️⭐️ — Patrícia L. (via Yelp)
+            </div> <br>
+            “Infelizmente não gostei. O prato estava frio quando chegou e os legumes meio murchos. Pode ter sido só
+            azar,
+            mas não arriscaria pedir de novo.”
+          </div>
         </div>
-
-        <div class="shadow mb-4 rounded-3 fs-6 p-3 text-white" style="background-color: #a00f2d;">
-          <div class="fw-bold fs-5">
-            ⭐️⭐️⭐️⭐️ — Renata F. (via TripAdvisor)
-          </div> <br>
-          “Bonito no prato, mas faltou personalidade no sabor. Os vegetais estavam bem cozidos, mas o espaguete veio um
-          pouco mole. Pelo preço, esperava mais.” <br> <br>
-        </div>
-
-        <div class="shadow mb-4 rounded-3 fs-6 p-3 text-white" style="background-color: #a00f2d;">
-          <div class="fw-bold fs-5">
-            ⭐️⭐️⭐️⭐️⭐️ — Eduardo S. (via Instagram)
-          </div> <br>
-          “Esse prato é poesia! 🌱🍝 A combinação de abobrinha, tomate cereja e manjericão com o espaguete al dente
-          ficou
-          perfeita. Ideal pra quem quer comer bem sem sair empanturrado.” <br> <br>
-        </div>
-
-        <div class="shadow rounded-3 fs-6 p-3 text-white" style="background-color: #a00f2d; color: white  ;">
-          <div class="fw-bold fs-5">
-            ⭐️⭐️ — Patrícia L. (via Yelp)
-          </div> <br>
-          “Infelizmente não gostei. O prato estava frio quando chegou e os legumes meio murchos. Pode ter sido só azar,
-          mas não arriscaria pedir de novo.”
-        </div>
-
-        </p>
       </div>
     </div>
+
   </main>
 
 
