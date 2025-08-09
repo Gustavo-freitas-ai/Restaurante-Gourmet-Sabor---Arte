@@ -14,7 +14,6 @@ header{
 main{
   flex: 1;
   background-color: rgba(160, 15, 44, 0.671);
-  background-image: url('https://img.freepik.com/premium-photo/blurred-background-blur-restaurant-with-bokeh-light-background_7190-46.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
