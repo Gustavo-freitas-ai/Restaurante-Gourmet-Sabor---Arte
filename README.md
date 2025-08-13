@@ -1,6 +1,6 @@
 <!-- MODELO PROJETO EM ANDAMENTO -->
 <h1 align="center"> 
-	🚧 Restaurante Gourmet Sabor & Arte - Em contrução 🚧
+	🚀✅ Restaurante Gourmet Sabor & Arte - Concluído ✅🚀
 </h1>
 
 <!-- ---------------------------------------------------------------------- -->
@@ -23,12 +23,23 @@
 ## 📄 Descrição do entregável
 
 <!-- EXEMPLO DE DESCRIÇÃO DE UM PROJETO: -->
+- assets
+  - image
 - src
-  - assets
-  - style
-  - fontes
-    
-- index.html 
+ 
+- pages
+  - cardapio.html
+  - contato.html
+  - pratoDetalhes.html
+  - reserva.html
+  - sobreNos.html
+
+- style
+
+- README.md
+
+- index.html
+  
 ---
 
 <!-- ---------------------------------------------------------------------- -->
@@ -46,16 +57,10 @@ O desafio proposto para este projeto era a criação de um trabalho proposto pel
 
 ### Widget
 
-<!-- AQUI VOCÊ PASSA O CAMINHO DA IMAGEM -->
-![Mobile1])<br>
-![Mobile2]<br>
-![Mobile3])
 
-### Widget em uma página externa
 
-![Web1]()
-![Web1]()
-![Web1]()
+![Web1](https://github.com/Gustavo-freitas-ai/Restaurante-Gourmet-Sabor-e-Arte/blob/main/Captura%20de%20tela%202025-08-13%20191806.png)
+
 
 ---
 
@@ -122,3 +127,4 @@ Gsutavo Freitas Dias </a>, <a href="https://www.linkedin.com/in//">Denis Barbosa
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE LICENÇA -->
+
