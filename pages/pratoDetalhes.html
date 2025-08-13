@@ -39,8 +39,7 @@
 </style>
 </head>
 
-<body
-  style="background-image: url('https://bing.com/th/id/BCO.6c343823-4b78-4a39-be32-9fdc29eaeacd.png'); background-repeat: no-repeat; background-size: cover;">
+<body>
   <header class="py-3 container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -61,7 +60,7 @@
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5 ">
             <li class="nav-item"><a href="/index.html" class="nav-link px-3 text-white fs-5">Home</a></li>
             <li class="nav-item"><a href="/pages/cardapio.html" class="nav-link px-3 text-white fs-5">Cardapio</a></li>
-            <li class="nav-item"><a href="/pages/sobreNos.html" class="nav-link px-3 text-white fs-5">Sobre Nos</a></li>
+            <li class="nav-item"><a href="/pages/sobreNos.html" class="nav-link px-3 text-white fs-5">Sobre Nós</a></li>
           </ul>
 
           <!-- Botões à direita -->
@@ -76,8 +75,8 @@
     </nav>
   </header> 
 
-  <main class="container p-5 ">
-    <div class="row py-2 rounded-3" style="background-color: #a00f2c44;">
+  <main class="container p-5 " style="background-color: rgb(160, 15, 45, 0.063);">
+    <div class="row py-2 rounded-3" >
       <div class="col-lg-6">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -104,29 +103,29 @@
         </div>
       </div>
       <div class="col-lg-6 d-flex justify-content-center flex-column gap-2">
-        <h2 class="d-flex h1 mb-3 fw-bold text-center justify-content-center mt-4"
-          style="color: white; font-size: 48px;">
+        <h2 class="d-flex fs-1 mb-3 fw-bold text-center justify-content-center mt-4"
+          style="color: #a00f2d">
           Spaghetti alla Primavera
         </h2>
         <div class="text-center">
-          <p><span class="text-warning fs-3"><i class="bi bi-star-fill"></i></span>
+          <p class="m-0"><span class="text-warning fs-3"><i class="bi bi-star-fill"></i></span>
             <span class="text-warning fs-3"><i class="bi bi-star-fill"></i></span>
             <span class="text-warning fs-3"><i class="bi bi-star-fill"></i></span>
             <span class="text-warning fs-3"><i class="bi bi-star-fill"></i></span>
             <span class="text-warning fs-3"><i class="bi bi-star-half"></i></i></span>
-            <span class="text-black fs-4 text-white">(87 avaliações)</span>
           </p>
+          <p class="text-black fs-5" style="color: #a00f2d;">(87 avaliações)</p>
         </div>
         <div>
-          <p class="fw-bold text-center"
-            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 55px; color: rgb(255, 255, 255);">R$94,59</p>
+          <p class="fw-bold text-center fs-1"
+            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #a00f2d;">R$94,59</p>
         </div>
       </div>
     </div>
 
     <div>
       <ul class="nav nav-tabs d-flex justify-content-center fs-5 mt-5 gap-md-5" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
+        <li class="nav-item " role="presentation">
           <button class="nav-link text-white active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
             type="button" role="tab" aria-controls="home" aria-selected="true">Descrição</button>
         </li>
@@ -141,8 +140,8 @@
       </ul>
 
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active mt-5 p-5 fs-3 text-white rounded-3" id="home" role="tabpanel"
-          aria-labelledby="home-tab" style="background-color: #a00f2d; ">Spaghetti alla
+        <div class="tab-pane fade show active mt-5 p-md-5 px-3 py-4  fs-3 text-white rounded-3" id="home" role="tabpanel"
+          aria-labelledby="home-tab" style="background-color: #a00f2d;">Spaghetti alla
           Primavera
           Delicado espaguete al dente envolto em um leve molho de azeite extra virgem, com toques sutis de alho e
           tomate
@@ -151,7 +150,7 @@
           pimenta-do-reino moída na hora. Uma combinação refinada de sabores frescos e texturas marcantes.
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <ul class="text-white fs-3 mt-5 p-5 rounded-3" style="background-color: #a00f2d;">
+          <ul class="text-white fs-3 mt-5 p-md-5 ps-5 py-4 rounded-3" style="background-color: #a00f2d;">
             <li>Espaguete al dente envolto em molho leve de azeite extra virgem</li>
             <li>Toques sutis de alho e tomate confit</li>
             <li>Acompanhado de:
@@ -230,7 +229,7 @@
 
 
 
-  <div class="d-flex justify-content-center" style="background-color: #a00f2d;">
+ <div class="d-flex justify-content-center" style="background-color: #a00f2d;">
     <footer class="container row py-5 mt-5">
       <div class="col-12 col-lg-3 mb-5">
         <img src="/assets/image/logo.png" alt="" style="width: 150px;">
@@ -244,10 +243,13 @@
             <a href="#" class="nav-link p-0 text-white">Home</a>
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Produtos</a>
+            <a href="/pages/cardapio.html" class="nav-link p-0 text-white">Cardápio</a>
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Contato</a>
+            <a href="/pages/reserva.html" class="nav-link p-0 text-white">Reservas</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="/pages/sobreNos.html" class="nav-link p-0 text-white">Sobre Nós</a>
           </li>
         </ul>
       </div>
@@ -280,7 +282,7 @@
             <a href="#" class="nav-link p-0 text-white">WhatsApp</a>
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">suporte@shopmart.com.br</a>
+            <a href="#" class="nav-link p-0 text-white">suporte@sabor&arte.com.br</a>
           </li>
         </ul>
       </div>
