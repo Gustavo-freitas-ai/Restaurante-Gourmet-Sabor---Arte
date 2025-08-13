@@ -70,7 +70,7 @@ O desafio proposto para este projeto era a criação de um trabalho proposto pel
 ## 🚀 Como executar o projeto
 
 1 - Baixar o Projeto <br>
-2 - Abir em um editor de código
+2 - Abir em um editor de código <br>
 3 - Abrir o arquivo index.html
 
 <!-- ---------------------------------------------------------------------- -->
@@ -116,7 +116,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <!-- ------------------------------ --------------------------------------- -->
 
 <!-- MODELO DE AUTOR-->
-## 🦸 Autor
+## 🦸 Autores
 
 <a href="https://www.linkedin.com/in/gustavo-freitas-83a3a5366/">
 Gsutavo Freitas Dias </a>, <a href="https://www.linkedin.com/in//">Denis Barbosa </a>,  <a href="https://www.linkedin.com/in//">Benilson ezequiel </a>, <a href="https://www.linkedin.com/in//">íris caitan</a>  
@@ -127,4 +127,5 @@ Gsutavo Freitas Dias </a>, <a href="https://www.linkedin.com/in//">Denis Barbosa
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE LICENÇA -->
+
 
