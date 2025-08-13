@@ -98,13 +98,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 -   **[BootStrap5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)**
 
-
-#### **Prototipação** ([Figma](https://www.figma.com/))
-
-- **[Minha Prototipação]()**
-
----
-
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE COMO CONTRIBUIR PARA O PROJETO -->
@@ -132,6 +125,7 @@ Gsutavo Freitas Dias </a>, <a href="https://www.linkedin.com/in//">Denis Barbosa
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE LICENÇA -->
+
 
 
 
