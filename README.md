@@ -25,7 +25,6 @@
 <!-- EXEMPLO DE DESCRIÇÃO DE UM PROJETO: -->
 - assets
   - image
-- src
  
 - pages
   - cardapio.html
@@ -35,6 +34,12 @@
   - sobreNos.html
 
 - style
+  - cardapio.css
+  - global.css
+  - pratoDetalhes.css
+  - reserva.css
+  - sobrenos.css
+  - style.css
 
 - README.md
 
@@ -127,5 +132,6 @@ Gsutavo Freitas Dias </a>, <a href="https://www.linkedin.com/in//">Denis Barbosa
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE LICENÇA -->
+
 
 
