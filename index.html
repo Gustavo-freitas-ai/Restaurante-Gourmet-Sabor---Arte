@@ -1,115 +1,341 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Sabor & Arte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Sabor & Arte</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap"
-    rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/global.css" />
+  </head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
-    defer></script>
-  <link rel="stylesheet" href="/style/style.css">
-  <link rel="stylesheet" href="/style/global.css" />
-</head>
+  <body>
+    <header class="py-3 container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <!-- Logo à esquerda -->
+          <a href="/" class="navbar-brand fs-5 mb-0"
+            ><img src="/assets/image/logo.png" alt="" style="width: 125px"
+          /></a>
 
-<body>
-  <header class="py-3 container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
+          <!-- Botão hamburguer para mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <!-- Logo à esquerda -->
-        <a href="/" class="navbar-brand fs-5 mb-0"><img src="/assets/image/logo.png" alt="" style="width: 125px;"></a>
+          <!-- Conteúdo colapsável -->
+          <div
+            class="collapse navbar-collapse justify-content-between align-items-center"
+            id="mainNavbar"
+          >
+            <!-- Menu centralizado -->
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+              <li class="nav-item">
+                <a href="/index.html" class="nav-link px-3 text-white fs-5"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/pages/cardapio.html"
+                  class="nav-link px-3 text-white fs-5"
+                  >Cardapio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/pages/sobreNos.html"
+                  class="nav-link px-3 text-white fs-5"
+                  >Sobre Nos</a
+                >
+              </li>
+            </ul>
 
-        <!-- Botão hamburguer para mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Conteúdo colapsável -->
-        <div class="collapse navbar-collapse justify-content-between align-items-center" id="mainNavbar">
-
-          <!-- Menu centralizado -->
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
-            <li class="nav-item"><a href="/index.html" class="nav-link px-3 text-white fs-5">Home</a></li>
-            <li class="nav-item"><a href="/pages/cardapio.html" class="nav-link px-3 text-white fs-5">Cardapio</a></li>
-            <li class="nav-item"><a href="/pages/sobreNos.html" class="nav-link px-3 text-white fs-5">Sobre Nos</a></li>
-          </ul>
-
-          <!-- Botões à direita -->
-          <div class="d-flex ">
-            <!-- <button type="button" class="btn btn-outline-primary me-2">Login</button> -->
-            <button type="button" class="btn btn-close-dark bg-white"><a href="/pages/reserva.html" class="fs-5 text-decoration-none text-danger">Reservas</a></button>
+            <!-- Botões à direita -->
+            <div class="d-flex">
+              <!-- <button type="button" class="btn btn-outline-primary me-2">Login</button> -->
+              <button type="button" class="btn btn-close-dark bg-white">
+                <a
+                  href="/pages/reserva.html"
+                  class="fs-5 text-decoration-none text-danger"
+                  >Reservas</a
+                >
+              </button>
+            </div>
           </div>
+        </div>
+      </nav>
+    </header>
 
+    <main
+      style="
+        background-image: url('https://static.vecteezy.com/system/resources/previews/037/125/586/non_2x/ai-generated-generative-ai-busy-chefs-working-on-the-restaurant-kitchen-blurred-background-free-photo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 70vh;
+      "
+      class="d-flex justify-content-end align-items-center pe-5"
+    >
+      <div
+        class="d-flex flex-column text-start text-white gap-4 col-6 text-end"
+      >
+        <h1 class="display-2">Arte servida à mesa</h1>
+        <p class="fs-4">
+          Faça seu pedido online ou reserve uma mesa. Estamos sempre prontos
+          para atender sua demanda. Você receberá a entrega mais rápida que
+          poderia imaginar.
+        </p>
+      </div>
+    </main>
+
+  <section class="pb-5">
+    <div class="d-flex justify-content-center text-center p-5 flex-column 1875rem">
+      <h1 class="fs-1">Promoções da <span
+          class="fw-bold color"
+          style="font-family: 'Prata', serif "
+          >#Semana</span></h1>
+      <p class="h5">Aproveite nossa exposição de artes gastronómicas da semana.</p>
+    </div>
+    <div class="container py-3 px-5 rounded-3" style="background-color: #a00f2c10;">
+      <div class="row flex-row-reverse">
+        <div class="col-md-6">
+          <img src="https://static.vecteezy.com/system/resources/previews/053/713/977/non_2x/spaghetti-with-tomatoes-and-rosemary-on-a-rustic-wooden-table-photo.jpg" alt="" style="width: 800px; height: 550px;"
+            class="rounded-1 img-fluid">
+        </div>
+        <div class="col-md-6 d-flex flex-column">
+          <div class="">
+            <h2 class=" py-2 h2 fs-1" style="border-top: black solid;"><a href="/pages/pratoDetalhes.html"
+              class="text-decoration-none" style="color: black;">Spaghetti alla Primavera</a></h2>
+              <p>Massa com legumes frescos e toque de azeite.</p>
+              <p style="justify-content: end; display: flex;" class="fs-5"> R$ 48,00</p>
+          </div>
+          <div>
+            <h2 class=" py-2 h2 fs-1" style="border-top: black solid;"><a href="/pages/pratoDetalhes.html"
+              class="text-decoration-none" style="color: black;">Filé ao Vinho Tinto</a></h2>
+              <p>Medalhão de filé mignon grelhado, servido ao molho de vinho tinto reduzido com alho e ervas frescas.</p>
+              <p style="justify-content: end; display: flex;" class="fs-5"> R$ 63,00</p>
+          </div>
+          <div>
+            <h2 class=" py-2 h2 fs-1" style="border-top: black solid;"><a href="/pages/pratoDetalhes.html"
+              class="text-decoration-none" style="color: black;">Risoto Nero</a></h2>
+              <p>Risoto cremoso de arroz arbório com tinta de lula, finalizado com camarões salteados e toque de limão-siciliano.</p>
+              <p style="justify-content: end; display: flex;" class="fs-5">R$ 48,00</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+    <section class="container my-5">
+      <h3 class="text-center mb-4">
+        Explore seu momento
+        <span
+          class="fw-bold color"
+          style="font-family: 'Prata', serif "
+          >#Sabor&Arte</span
+        >
+      </h3>
+      <div class="row">
+        <div class="col-md-4 mt-3">
+          <div class="card card border-0">
+            <img 
+              src="https://static.vecteezy.com/system/resources/previews/032/694/671/non_2x/food-delivery-driver-on-moped-with-yellow-bag-in-thailand-city-at-night-ai-generated-free-photo.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center color">Delivery</h5>
+              <p class="card-text text-center">Explore a praticidade de receber suas delícias onde estiver.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card card border-0">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/027/803/377/non_2x/traditional-german-restaurant-decor-free-photo.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center color">Presencial</h5>
+              <p class="card-text text-center">Viva a experiência completa em nossos espaços cuidadosamente decorados.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card card border-0">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/023/802/437/non_2x/friends-toasting-with-cocktails-illustration-ai-generative-free-photo.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center color">Happy Hour</h5>
+              <p class="card-text text-center">Um brinde à descontração e ao sabor que transforma qualquer encontro em festa.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
+    </section>
 
-  <div class="d-flex justify-content-center" style="background-color: #a00f2d;">
-    <footer class="container row py-5 mt-5">
-      <div class="col-12 col-lg-3 mb-5">
-        <img src="/assets/image/logo.png" alt="" style="width: 150px;">
-        <p class="text-white">© 2025</p>
+    <section class="container my-5">
+      <h3 class="text-center">Perguntas Frequentes</h3>
+      <div class="accordion accordion-flush mt-3" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed fs-5"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#pergunta1"
+              aria-expanded="false"
+              aria-controls="pergunta1"
+            >
+              O restaurante trabalha com reservas?
+            </button>
+          </h4>
+          <div
+            id="pergunta1"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Sim. Para garantir uma experiência tranquila e personalizada,
+                recomendamos fazer reservas antecipadas, especialmente nos fins
+                de semana. Você pode reservar diretamente pelo nosso site,
+                telefone ou WhatsApp.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed fs-5"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#pergunta2"
+              aria-expanded="false"
+              aria-controls="pergunta2"
+            >
+              O cardápio possui opções vegetarianas ou veganas?
+            </button>
+          </h4>
+          <div
+            id="pergunta2"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Com certeza. Nosso cardápio é pensado para atender diferentes
+                estilos alimentares, com pratos vegetarianos e veganos que
+                valorizam ingredientes frescos e criativos — sem abrir mão do
+                sabor e da apresentação artística.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="offset-lg-1 col-12 col-lg-3 mb-5 mt-">
-        <h4 class="text-white">Menu Alternativo</h4>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Home</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Produtos</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Contato</a>
-          </li>
-        </ul>
-      </div>
 
-      <div class="col-12 col-lg-3 mb-5">
-        <h4 class="text-white">Redes Sociais</h4>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Instagram</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Facebook</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">X</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Linkedin</a>
-          </li>
-        </ul>
-      </div>
+    <div
+      class="d-flex justify-content-center"
+      style="background-color: #a00f2d"
+    >
+      <footer class="container row py-5 mt-5">
+        <div class="col-12 col-lg-3 mb-5">
+          <img src="/assets/image/logo.png" alt="" style="width: 150px" />
+          <p class="text-white">© 2025</p>
+        </div>
 
-      <div class="col-12 col-lg-2 mb-5">
-        <h4 class="text-white">Contato</h4>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">(21) 98654-8985</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">WhatsApp</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">suporte@shopmart.com.br</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-</body>
+        <div class="offset-lg-1 col-12 col-lg-3 mb-5 mt-">
+          <h4 class="text-white">Menu Alternativo</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Produtos</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Contato</a>
+            </li>
+          </ul>
+        </div>
 
+        <div class="col-12 col-lg-3 mb-5">
+          <h4 class="text-white">Redes Sociais</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Instagram</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Facebook</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">X</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-2 mb-5">
+          <h4 class="text-white">Contato</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">(21) 98654-8985</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">WhatsApp</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white"
+                >suporte@shopmart.com.br</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

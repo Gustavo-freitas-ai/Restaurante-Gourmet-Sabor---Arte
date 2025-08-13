@@ -1,0 +1,9 @@
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.color{
+    color:#a00f2d;
+}
